@@ -1,7 +1,9 @@
 ﻿using System;
+using Infrastructure.Data.Postgres.Entities.Base;
+
 namespace Infrastructure.Data.Postgres.Entities
 {
-    public class Ilaclar
+    public class Ilaclar : Entity<int>
     {
         public int İlaçID { get; set; }
         public string İlaçAdı { get; set; } = default!;

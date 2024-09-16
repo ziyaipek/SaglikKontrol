@@ -18,6 +18,8 @@
     <None Remove="Data\Postgres\EntityFramework\" />
     <None Remove="Data\Postgres\Migrations\" />
     <None Remove="Data\Postgres\Repositories\" />
+    <None Remove="Data\Postgres\Entities\Base\" />
+    <None Remove="Data\Postgres\Entities\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -31,5 +33,7 @@
     <Folder Include="Data\Postgres\EntityFramework\" />
     <Folder Include="Data\Postgres\Migrations\" />
     <Folder Include="Data\Postgres\Repositories\" />
+    <Folder Include="Data\Postgres\Entities\Base\" />
+    <Folder Include="Data\Postgres\Entities\Base\Interface\" />
   </ItemGroup>
 </Project>

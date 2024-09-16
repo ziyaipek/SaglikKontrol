@@ -1,8 +1,10 @@
 ﻿using System;
+using Infrastructure.Data.Postgres.Entities.Base;
+
 namespace Infrastructure.Data.Postgres.Entities
 {
-	public class Yonetici
-	{
+	public class Yonetici : Entity<int>
+    {
         public int YöneticiID { get; set; }
         public string Ad { get; set; } = default!;
         public string Soyad { get; set; } = default!;

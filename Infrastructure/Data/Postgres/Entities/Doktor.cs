@@ -1,7 +1,9 @@
 ﻿using System;
+using Infrastructure.Data.Postgres.Entities.Base;
+
 namespace Infrastructure.Data.Postgres.Entities
 {
-    public class Doktor
+    public class Doktor : Entity<int>
     {
         public int DoktorID { get; set; }
         public string Ad { get; set; } = default!;
