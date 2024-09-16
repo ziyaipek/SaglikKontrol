@@ -57,8 +57,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "'Bearer' [boşluk] 'tokeniniz' şeklinde aşağıdaki alanı doldurunuz..
-    Örnek: "Bearer benimtokenim"",
+        Description = "'Bearer' [boşluk] 'tokeniniz' şeklinde aşağıdaki alanı doldurunuz..Örnek:selamlar"
     });
     options.AddSecurityRequirement(new OpenApiSecurityRequirement {
 {
@@ -72,8 +71,7 @@ new string[] {}
 }
 });
 });
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBear
-er(jwtBearerOptions =>
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(jwtBearerOptions =>
 {
     jwtBearerOptions.TokenValidationParameters = new TokenValidationParameters
     {
@@ -84,8 +82,7 @@ er(jwtBearerOptions =>
         ValidIssuer = builder.Configuration["TokenOptions:Issuer"],
         ValidAudience = builder.Configuration["TokenOptions:Audience"],
         IssuerSigningKey = new
-    SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["TokenOptions:Sec
-    urityKey"])),
+    SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["TokenOptions:SecurityKey"])),
     ClockSkew = TimeSpan.Zero
     };
 });

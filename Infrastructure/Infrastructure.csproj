@@ -36,4 +36,7 @@
     <Folder Include="Data\Postgres\Entities\Base\" />
     <Folder Include="Data\Postgres\Entities\Base\Interface\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
+  </ItemGroup>
 </Project>

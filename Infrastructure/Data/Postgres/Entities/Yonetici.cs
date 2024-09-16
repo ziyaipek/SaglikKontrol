@@ -13,4 +13,3 @@ namespace Infrastructure.Data.Postgres.Entities
         public string Yşifre { get; set; } = default!;
     }
 }
-

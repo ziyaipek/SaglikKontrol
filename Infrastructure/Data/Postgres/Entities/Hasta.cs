@@ -19,7 +19,6 @@ namespace Infrastructure.Data.Postgres.Entities
         public bool SilmeGostergesi { get; set; }
         public bool IlkGiris { get; set; }
 
-        public List<DoktorHasta> DoktorHastas { get; set; } = default!;
         public List<HastaHastalik> HastaHastaliks { get; set; } = default!;
         public List<IlacHasta> IlacHastas { get; set; } = default!;
 
