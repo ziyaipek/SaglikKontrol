@@ -11,11 +11,15 @@
     <None Remove="Results\" />
     <None Remove="Utilities\" />
     <None Remove="Constants\" />
+    <None Remove="Utilities\Mail\" />
+    <None Remove="Utilities\Pagination\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Exceptions\" />
     <Folder Include="Results\" />
     <Folder Include="Utilities\" />
     <Folder Include="Constants\" />
+    <Folder Include="Utilities\Mail\" />
+    <Folder Include="Utilities\Pagination\" />
   </ItemGroup>
 </Project>
