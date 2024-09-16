@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="Postgres\" />
+    <None Remove="Entities\" />
+    <None Remove="Migrations\" />
+    <None Remove="Repositories\" />
+    <None Remove="Configurations\" />
+    <None Remove="Data\Postgres\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Postgres\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Data\Postgres\" />
+  </ItemGroup>
+</Project>
