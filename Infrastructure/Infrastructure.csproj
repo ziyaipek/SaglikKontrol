@@ -14,6 +14,10 @@
     <None Remove="Repositories\" />
     <None Remove="Configurations\" />
     <None Remove="Data\Postgres\" />
+    <None Remove="Data\Postgres\Entities\" />
+    <None Remove="Data\Postgres\EntityFramework\" />
+    <None Remove="Data\Postgres\Migrations\" />
+    <None Remove="Data\Postgres\Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -23,5 +27,9 @@
     <Folder Include="Repositories\" />
     <Folder Include="Configurations\" />
     <Folder Include="Data\Postgres\" />
+    <Folder Include="Data\Postgres\Entities\" />
+    <Folder Include="Data\Postgres\EntityFramework\" />
+    <Folder Include="Data\Postgres\Migrations\" />
+    <Folder Include="Data\Postgres\Repositories\" />
   </ItemGroup>
 </Project>
