@@ -5,20 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data.Postgres.EntityFramework
 {
-	public class PostgresContext : DBContext
+	public class PostgresContext : DbContext
 	{
         public PostgresContext(DbContextOptions<PostgresContext> options) : base(options) { }
 
-        public DbSet<Yonetici> Yoneticiler { get; set; }
-        public DbSet<Doktor> Doktorlar { get; set; }
-        public DbSet<DoktorHasta> DoktorHastalar { get; set; }
-        public DbSet<Hasta> Hastalar { get; set; }
-        public DbSet<HastaHastalik> HastaHastaliklar { get; set; }
-        public DbSet<Hastalik> Hastaliklar { get; set; }
-        public DbSet<IlacHasta> IlacHastalar { get; set; }
-        public DbSet<Ilaclar> Ilaclar { get; set; }
+        public DbSet<Admin> Admins { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<DoctorPatient> DoctorPatients { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+        public DbSet<PatientDisease> PatientDiseases { get; set; }
+        public DbSet<Disease> Diseases { get; set; }
+        public DbSet<MedicationPatient> MedicationPatients { get; set; }
+        public DbSet<Medication> Medications { get; set; }
     }
-
-    
 }
 

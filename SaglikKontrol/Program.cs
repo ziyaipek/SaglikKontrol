@@ -106,6 +106,5 @@ app.UseCors("CorsPolicy");
 app.UseMiddleware<ErrorHandlerMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.MapHub<NotificationHub>("/notification/hub");
 app.MapControllers();
 app.Run();
