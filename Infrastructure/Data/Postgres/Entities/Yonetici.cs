@@ -4,11 +4,11 @@ namespace Infrastructure.Data.Postgres.Entities
 	public class Yonetici
 	{
         public int YöneticiID { get; set; }
-        public string Ad { get; set; }
-        public string Soyad { get; set; }
-        public string Iletisimbilgileri { get; set; }
-        public string Ykullaniciadi { get; set; }
-        public string Ysifre { get; set; }
+        public string Ad { get; set; } = default!;
+        public string Soyad { get; set; } = default!;
+        public string İletişimBilgileri { get; set; } = default!;
+        public string YkullanıcıAdı { get; set; } = default!;
+        public string Yşifre { get; set; } = default!;
     }
 }
 
