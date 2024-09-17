@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaglikKontrol", "SaglikKontrol\SaglikKontrol.csproj", "{A04ACAEC-FF85-4BFB-9AD5-14748E956D1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "SaglikKontrol\Web.csproj", "{A04ACAEC-FF85-4BFB-9AD5-14748E956D1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{7493D35F-3948-4BB0-80FC-D65F0E36E891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{70F3B46B-1D5C-42CC-A35E-4BB81C158EE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{8259638C-0DCB-445B-A66D-BE1E3609EB15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{9776B9D9-3113-464D-92BF-D73EB5C0159A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +25,14 @@ Global
 		{7493D35F-3948-4BB0-80FC-D65F0E36E891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7493D35F-3948-4BB0-80FC-D65F0E36E891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7493D35F-3948-4BB0-80FC-D65F0E36E891}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70F3B46B-1D5C-42CC-A35E-4BB81C158EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70F3B46B-1D5C-42CC-A35E-4BB81C158EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70F3B46B-1D5C-42CC-A35E-4BB81C158EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70F3B46B-1D5C-42CC-A35E-4BB81C158EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8259638C-0DCB-445B-A66D-BE1E3609EB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8259638C-0DCB-445B-A66D-BE1E3609EB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8259638C-0DCB-445B-A66D-BE1E3609EB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8259638C-0DCB-445B-A66D-BE1E3609EB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9776B9D9-3113-464D-92BF-D73EB5C0159A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9776B9D9-3113-464D-92BF-D73EB5C0159A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9776B9D9-3113-464D-92BF-D73EB5C0159A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9776B9D9-3113-464D-92BF-D73EB5C0159A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
