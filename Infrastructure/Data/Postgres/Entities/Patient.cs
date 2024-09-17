@@ -17,7 +17,7 @@ namespace Infrastructure.Data.Postgres.Entities
         public string EmergencyContactFirstName { get; set; } = default!;
         public string EmergencyContactLastName { get; set; } = default!;
         public string EmergencyContactPhone { get; set; } = default!;
-        public bool IsDeleted { get; set; }
+        public new bool IsDeleted { get; set; }
         public bool IsFirstLogin { get; set; }
 
         public List<PatientDisease> PatientDiseases { get; set; } = default!;

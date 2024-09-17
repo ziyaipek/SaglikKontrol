@@ -20,6 +20,9 @@
     <Folder Include="Utilities\Mapping\" />
     <Folder Include="Utilities\Security\" />
     <Folder Include="Utilities\Validation\" />
+    <Folder Include="Services\Base\" />
+    <Folder Include="Services\Interface\" />
+    <Folder Include="Services\Base\Interface\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -33,6 +36,9 @@
     <None Remove="Utilities\Mapping\" />
     <None Remove="Utilities\Security\" />
     <None Remove="Utilities\Validation\" />
+    <None Remove="Services\Base\" />
+    <None Remove="Services\Interface\" />
+    <None Remove="Services\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
