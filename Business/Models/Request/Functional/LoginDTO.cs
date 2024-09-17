@@ -1,9 +1,9 @@
 ﻿using System;
 namespace Business.Models.Request.Functional
 {
-	public class Login
+	public class LoginDTO
 	{
-		public Login()
+		public LoginDTO()
 		{
 		}
 	}
