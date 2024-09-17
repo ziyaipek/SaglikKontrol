@@ -6,7 +6,6 @@ using Microsoft.OpenApi.Models;
 using System.Globalization;
 using System.Text;
 using System.Text.Json.Serialization;
-using Business.Utilities.Hubs.Notification;
 using Web.Middlewares;
 using Web.Utilities;
 using Microsoft.Extensions.DependencyInjection;
