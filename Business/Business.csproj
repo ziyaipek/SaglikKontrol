@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Utilities\" />
     <Folder Include="Services\" />
     <Folder Include="Models\Request\" />
     <Folder Include="Models\Response\" />
@@ -17,7 +16,7 @@
     <Folder Include="Models\Request\Update\" />
     <Folder Include="Utilities\Helpers\" />
     <Folder Include="Utilities\Hubs\" />
-    <Folder Include="Utilities\Mapping\" />
+    <Folder Include="Utilities\Mapping\Interface\" />
     <Folder Include="Utilities\Security\" />
     <Folder Include="Utilities\Validation\" />
     <Folder Include="Services\Base\" />
