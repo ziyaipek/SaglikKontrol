@@ -22,15 +22,12 @@
     <None Remove="Data\Postgres\Entities\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Postgres\" />
     <Folder Include="Entities\" />
     <Folder Include="Migrations\" />
     <Folder Include="Repositories\" />
     <Folder Include="Configurations\" />
-    <Folder Include="Data\Postgres\" />
     <Folder Include="Data\Postgres\Entities\" />
-    <Folder Include="Data\Postgres\EntityFramework\" />
     <Folder Include="Data\Postgres\Migrations\" />
     <Folder Include="Data\Postgres\Repositories\" />
     <Folder Include="Data\Postgres\Entities\Base\" />
