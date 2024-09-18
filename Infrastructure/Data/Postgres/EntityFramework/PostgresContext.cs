@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Infrastructure.Data.Postgres.Entities;
+using Infrastructure.Data.Postgres.EntityFramework.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -30,7 +31,8 @@ namespace Infrastructure.Data.Postgres.EntityFramework
             modelBuilder.ApplyConfiguration(new DiseaseConfiguration());
             modelBuilder.ApplyConfiguration(new MedicationPatientConfiguration());
             modelBuilder.ApplyConfiguration(new MedicationConfiguration());
-        }
+			modelBuilder.ApplyConfiguration(new PatientDiseaseConfiguration());
+		}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
