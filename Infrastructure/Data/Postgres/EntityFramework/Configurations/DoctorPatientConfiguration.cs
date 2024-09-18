@@ -1,12 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Infrastructure.Data.Postgres.Entities;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Data;
 
 namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
 {
-	internal class DoctorPatientConfiguration
-	{
-	}
+    public class DoctorPatientConfiguration : BaseConfiguration<DoctorPatient, int>
+    {
+        public override void Configure(EntityTypeBuilder<DoctorPatient> builder)
+        {
+            base.Configure(builder);
+            var data = new DoctorPatient[]
+            {
+            new DoctorPatient{ Id = 1,CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+            new DoctorPatient{ Id = 2,CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+            new DoctorPatient{ Id = 3,CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+
+            };
+
+            builder.HasData(data);
+        }
+    }
 }

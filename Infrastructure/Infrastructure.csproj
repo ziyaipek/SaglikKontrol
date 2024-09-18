@@ -9,7 +9,6 @@
   <ItemGroup>
     <None Remove="Data\" />
     <None Remove="Repositories\" />
-    <None Remove="Configurations\" />
     <None Remove="Data\Postgres\" />
     <None Remove="Data\Postgres\Entities\" />
     <None Remove="Data\Postgres\EntityFramework\" />
@@ -23,7 +22,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
-    <Folder Include="Configurations\" />
     <Folder Include="Data\Postgres\Entities\" />
     <Folder Include="Data\Postgres\Migrations\" />
     <Folder Include="Data\Postgres\Repositories\" />
