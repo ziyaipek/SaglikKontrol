@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <None Remove="Data\" />
-    <None Remove="Postgres\" />
-    <None Remove="Entities\" />
-    <None Remove="Migrations\" />
     <None Remove="Repositories\" />
     <None Remove="Configurations\" />
     <None Remove="Data\Postgres\" />
@@ -20,11 +17,11 @@
     <None Remove="Data\Postgres\Repositories\" />
     <None Remove="Data\Postgres\Entities\Base\" />
     <None Remove="Data\Postgres\Entities\Base\Interface\" />
+    <None Remove="Repositories\Base\" />
+    <None Remove="Repositories\Interface\" />
+    <None Remove="Repositories\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Postgres\" />
-    <Folder Include="Entities\" />
-    <Folder Include="Migrations\" />
     <Folder Include="Repositories\" />
     <Folder Include="Configurations\" />
     <Folder Include="Data\Postgres\Entities\" />
@@ -32,9 +29,15 @@
     <Folder Include="Data\Postgres\Repositories\" />
     <Folder Include="Data\Postgres\Entities\Base\" />
     <Folder Include="Data\Postgres\Entities\Base\Interface\" />
+    <Folder Include="Repositories\Base\" />
+    <Folder Include="Repositories\Interface\" />
+    <Folder Include="Repositories\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 </Project>

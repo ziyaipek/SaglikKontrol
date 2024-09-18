@@ -1,24 +1,23 @@
 ﻿using System;
+using Infrastructure.Data.Postgres.Entities;
 using Infrastructure.Data.Postgres.EntityFramework;
+using Infrastructure.Data.Postgres.Repositories.Interface;
 
 namespace Infrastructure.Data.Postgres
 {
     public interface IUnitOfWork : IDisposable
     {
-        IUserRepository Users { get; }
-        Task<int> CompleteAsync();
-    }
-    public class UnitOfWork : IUnitOfWork
-    {
-        private readonly PostgresContext _context;
-        public UnitOfWork(PostgresContext context)
-        {
-            _context = context;
-            Users = new UserRepository(_context);
-        }
-        public IUserRepository Users { get; }
-        public async Task<int> CompleteAsync() => await _context.SaveChangesAsync();
-        public void Dispose() => _context.Dispose();
+
+        IAdminRepository Admins { get; }
+        IDiseaseRepository Diseases { get; }
+        IDoctorPatientRepository DoctorPatients { get; }
+        IDoctorRepository Doctors { get; }
+        IMedicationPatientRepository MedicationPatients { get; }
+        IMedicationRepository Medications { get; }
+        IPatientDiseaseRepository PatientDiseases { get; }
+        IPatientRepository Patients { get; }
+
+        Task<int> CommitAsync();
     }
 }
 
