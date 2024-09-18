@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Utilities\" />
     <Folder Include="Services\" />
     <Folder Include="Models\Request\" />
     <Folder Include="Models\Response\" />
@@ -17,7 +16,7 @@
     <Folder Include="Models\Request\Update\" />
     <Folder Include="Utilities\Helpers\" />
     <Folder Include="Utilities\Hubs\" />
-    <Folder Include="Utilities\Mapping\" />
+    <Folder Include="Utilities\Mapping\Interface\" />
     <Folder Include="Utilities\Security\" />
     <Folder Include="Utilities\Validation\" />
     <Folder Include="Services\Base\" />
@@ -41,11 +40,6 @@
     <None Remove="Services\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
-    <ProjectReference Include="..\SaglikKontrol\Web.csproj" />
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.7.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.3" />
@@ -54,8 +48,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
-    <PackageReference Include="Microsoft.OpenApi" Version="1.6.21" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.7.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 </Project>

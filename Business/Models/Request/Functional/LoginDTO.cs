@@ -5,6 +5,7 @@ namespace Business.Models.Request.Functional
 	{
 		public LoginDTO()
 		{
+
 		}
 	}
 }
