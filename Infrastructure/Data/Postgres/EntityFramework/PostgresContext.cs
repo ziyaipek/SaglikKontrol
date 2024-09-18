@@ -31,8 +31,8 @@ namespace Infrastructure.Data.Postgres.EntityFramework
             modelBuilder.ApplyConfiguration(new DiseaseConfiguration());
             modelBuilder.ApplyConfiguration(new MedicationPatientConfiguration());
             modelBuilder.ApplyConfiguration(new MedicationConfiguration());
-			modelBuilder.ApplyConfiguration(new PatientDiseaseConfiguration());
-		}
+            modelBuilder.ApplyConfiguration(new PatientDiseaseConfiguration());
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
