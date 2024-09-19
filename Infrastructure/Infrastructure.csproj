@@ -9,7 +9,6 @@
   <ItemGroup>
     <None Remove="Data\" />
     <None Remove="Repositories\" />
-    <None Remove="Configurations\" />
     <None Remove="Data\Postgres\" />
     <None Remove="Data\Postgres\Entities\" />
     <None Remove="Data\Postgres\EntityFramework\" />
