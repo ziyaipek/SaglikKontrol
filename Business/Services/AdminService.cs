@@ -6,6 +6,10 @@ using Business.Models.Response;
 using Infrastructure.Data.Postgres.Entities;
 using Business.Services.Interface;
 using Business.Utilities.Mapping.Interface;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/batuhan
 
 namespace Business.Services
 {

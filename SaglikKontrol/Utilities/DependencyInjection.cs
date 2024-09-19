@@ -1,10 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
-using Business.Services;
+﻿using Business.Services;
 using Business.Services.Interface;
-using Infrastructure.Data.Postgres;
 using Business.Utilities.Mapping;
 using Business.Utilities.Mapping.Interface;
+using Infrastructure.Data.Postgres;
+<<<<<<< HEAD
+using Business.Utilities.Mapping;
+using Business.Utilities.Mapping.Interface;
+=======
+using Infrastructure.Data.Postgres.Entities;
+using Infrastructure.Data.Postgres.Repositories.Interface;
+using Infrastructure.Data.Postgres.Repositories;
+>>>>>>> origin/batuhan
 
 namespace Web.Utilities;
 
@@ -21,15 +27,16 @@ public static class DependencyInjection
         serviceCollection.AddScoped<IPatientDiseaseService, PatientDiseaseService>();
         serviceCollection.AddScoped<IPatientService, PatientService>();
 		serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
+		serviceCollection.AddScoped<IPatientRepository, PatientRepository>();
 	}
 
     public static void AddMySingleton(this IServiceCollection serviceCollection)
     {
         serviceCollection.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         serviceCollection.AddSingleton<IMapperHelper, MapperHelper>();
-        serviceCollection.AddSingleton<IValidationHelper, ValidationHelper>();
-        serviceCollection.AddSingleton<IJwtTokenHelper, JwtTokenHelper>();
-        serviceCollection.AddSingleton<IHashingHelper, HashingHelper>();
+        //serviceCollection.AddSingleton<IValidationHelper, ValidationHelper>();
+        //serviceCollection.AddSingleton<IJwtTokenHelper, JwtTokenHelper>();
+        //serviceCollection.AddSingleton<IHashingHelper, HashingHelper>();
     }
     public static void AddMyTransient(this IServiceCollection serviceCollection)
     {
