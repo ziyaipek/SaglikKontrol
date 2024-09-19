@@ -43,8 +43,8 @@ public class Profiles : AutoMapper.Profile
         CreateMap<PatientDiseaseResponseDTO, PatientDisease>();
     }
 
-    private void CreateMap<T1, T2>()
-    {
-        throw new NotImplementedException();
-    }
+    //private void CreateMap<T1, T2>()
+    //{
+    //    throw new NotImplementedException();
+    //}
 }

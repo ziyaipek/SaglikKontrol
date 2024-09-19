@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Business.Services;
 using Business.Services.Interface;
+using Infrastructure.Data.Postgres;
 namespace Web.Utilities;
 
 public static class DependencyInjection
@@ -16,7 +17,8 @@ public static class DependencyInjection
         serviceCollection.AddScoped<IMedicationService, MedicationService>();
         serviceCollection.AddScoped<IPatientDiseaseService, PatientDiseaseService>();
         serviceCollection.AddScoped<IPatientService, PatientService>();
-    }
+		serviceCollection.AddScoped<IUnitOfWork, UnitOfWork>();
+	}
 
     public static void AddMySingleton(this IServiceCollection serviceCollection)
     {
