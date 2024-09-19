@@ -22,7 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
-    <Folder Include="Configurations\" />
+    <Folder Include="Data\Postgres\Entities\" />
     <Folder Include="Data\Postgres\Migrations\" />
     <Folder Include="Data\Postgres\Repositories\" />
     <Folder Include="Data\Postgres\Entities\Base\" />
