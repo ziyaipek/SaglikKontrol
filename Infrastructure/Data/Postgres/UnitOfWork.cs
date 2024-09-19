@@ -17,14 +17,14 @@ public class UnitOfWork : IUnitOfWork
     }
 
     
-    private IAdminRepository? _adminRepository;
-    private IDiseaseRepository? _diseaseRepository;
-    private IDoctorPatientRepository? _doctorPatientRepository;
-    private IDoctorRepository? _doctorRepository;
-    private IMedicationPatientRepository? _medicationPatientRepository;
-    private IMedicationRepository? _medicationRepository;
-    private IPatientDiseaseRepository? _patientDiseaseRepository;
-    private IPatientRepository? _patientRepository;
+    private AdminRepository? _adminRepository;
+    private DiseaseRepository? _diseaseRepository;
+    private DoctorPatientRepository? _doctorPatientRepository;
+    private DoctorRepository? _doctorRepository;
+    private MedicationPatientRepository? _medicationPatientRepository;
+    private MedicationRepository? _medicationRepository;
+    private PatientDiseaseRepository? _patientDiseaseRepository;
+    private PatientRepository? _patientRepository;
 
 
     public IAdminRepository Admins => _adminRepository ??= new AdminRepository(_postgresContext);

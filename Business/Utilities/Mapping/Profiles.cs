@@ -8,6 +8,9 @@ using System.Data;
 using System.Security;
 using System.Text.RegularExpressions;
 using File = Infrastructure.Data.Postgres.Entities.File;
+using Business.Utilities.Mapping.Interface;
+
+
 
 namespace Business.Utilities.Mapping;
 
@@ -42,9 +45,4 @@ public class Profiles : AutoMapper.Profile
         CreateMap<PatientResponseDTO, Patient>();
         CreateMap<PatientDiseaseResponseDTO, PatientDisease>();
     }
-
-    //private void CreateMap<T1, T2>()
-    //{
-    //    throw new NotImplementedException();
-    //}
 }

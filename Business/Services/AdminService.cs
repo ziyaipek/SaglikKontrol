@@ -5,6 +5,7 @@ using System.Data;
 using Business.Models.Response;
 using Infrastructure.Data.Postgres.Entities;
 using Business.Services.Interface;
+using Business.Utilities.Mapping.Interface;
 
 namespace Business.Services
 {

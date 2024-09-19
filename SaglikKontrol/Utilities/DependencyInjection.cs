@@ -3,6 +3,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Business.Services;
 using Business.Services.Interface;
 using Infrastructure.Data.Postgres;
+using Business.Utilities.Mapping;
+using Business.Utilities.Mapping.Interface;
+
 namespace Web.Utilities;
 
 public static class DependencyInjection
