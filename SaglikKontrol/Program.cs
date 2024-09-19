@@ -126,7 +126,6 @@ using Microsoft.OpenApi.Models;
 using System.Globalization;
 using System.Text;
 using System.Text.Json.Serialization;
-using Web.Middlewares;
 using Web.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -171,8 +170,8 @@ builder.Services.AddSwaggerGen(options =>
 	options.SwaggerDoc("v1", new OpenApiInfo
 	{
 		Version = "v1",
-		Title = "Akademi Portal",
-		Description = ".NET 7 / ASP.NET Core Web API",
+		Title = "Sağlık Kontrol",
+		Description = ".NET 6 / ASP.NET Core Web API",
 	});
 	options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
 	{

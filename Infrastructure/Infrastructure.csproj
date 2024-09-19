@@ -24,7 +24,6 @@
     <Folder Include="Repositories\" />
     <Folder Include="Data\Postgres\Entities\" />
     <Folder Include="Data\Postgres\Migrations\" />
-    <Folder Include="Data\Postgres\Repositories\" />
     <Folder Include="Data\Postgres\Entities\Base\" />
     <Folder Include="Data\Postgres\Entities\Base\Interface\" />
     <Folder Include="Repositories\Base\" />
