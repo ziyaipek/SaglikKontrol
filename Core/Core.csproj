@@ -22,4 +22,8 @@
     <Folder Include="Utilities\Mail\" />
     <Folder Include="Utilities\Pagination\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.7.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+  </ItemGroup>
 </Project>
