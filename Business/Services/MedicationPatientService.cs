@@ -13,7 +13,7 @@ namespace Business.Services
     public class MedicationPatientService : BaseService<MedicationPatient, int, MedicationPatientResponseDTO>, IMedicationPatientService
     {
         public MedicationPatientService(IUnitOfWork unitOfWork, IMapperHelper mapperHelper)
-            : base(unitOfWork, unitOfWork.MedicationPatientRepository, mapperHelper)
+            : base(unitOfWork, unitOfWork.MedicationPatients, mapperHelper)
         {
         }
     }

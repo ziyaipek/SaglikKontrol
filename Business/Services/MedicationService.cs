@@ -14,7 +14,7 @@ namespace Business.Services
     public class MedicationService : BaseService<Medication, int, MedicationResponseDTO>, IMedicationService
     {
         public MedicationService(IUnitOfWork unitOfWork, IMapperHelper mapperHelper)
-            : base(unitOfWork, unitOfWork.MedicationRepository, mapperHelper)
+            : base(unitOfWork, unitOfWork.Medications, mapperHelper)
         {
         }
     }

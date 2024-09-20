@@ -13,7 +13,7 @@ namespace Business.Services
     public class AdminService : BaseService<Admin, int, AdminResponseDTO>, IAdminService
     {
         public AdminService(IUnitOfWork unitOfWork, IMapperHelper mapperHelper)
-            : base(unitOfWork, unitOfWork.AdminRepository, mapperHelper)
+            : base(unitOfWork, unitOfWork.Admins, mapperHelper)
         {
         }
     }
