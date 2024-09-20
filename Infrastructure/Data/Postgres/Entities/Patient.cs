@@ -7,20 +7,20 @@ namespace Infrastructure.Data.Postgres.Entities
     public class Patient : Entity<int>
     {
         public int PatientID { get; set; }
-        public string FirstName { get; set; } = default!;
-        public string LastName { get; set; } = default!;
+        public string FirstName { get; set; } 
+        public string LastName { get; set; } 
         public DateTime DateOfBirth { get; set; }
-        public string Gender { get; set; } = default!;
-        public string ContactInformation { get; set; } = default!;
-        public string Username { get; set; } = default!;
-        public string Password { get; set; } = default!;
-        public string EmergencyContactFirstName { get; set; } = default!;
-        public string EmergencyContactLastName { get; set; } = default!;
-        public string EmergencyContactPhone { get; set; } = default!;
+        public string Gender { get; set; }
+        public string ContactInformation { get; set; } 
+        public string Username { get; set; }
+        public string Password { get; set; } 
+        public string EmergencyContactFirstName { get; set; } 
+        public string EmergencyContactLastName { get; set; } 
+        public string EmergencyContactPhone { get; set; } 
         public new bool IsDeleted { get; set; }
         public bool IsFirstLogin { get; set; }
 
-        public List<PatientDisease> PatientDiseases { get; set; } = default!;
-        public List<MedicationPatient> MedicationPatients { get; set; } = default!;
+        public List<PatientDisease> PatientDiseases { get; set; } 
+        public List<MedicationPatient> MedicationPatients { get; set; }
     }
 }

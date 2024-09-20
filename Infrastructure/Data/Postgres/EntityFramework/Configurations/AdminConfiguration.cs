@@ -11,10 +11,10 @@ namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
             base.Configure(builder);
             var data = new Admin[]
             {
-            new Admin{ Id = 1,Username="Emre",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            new Admin{ Id = 2,Username="Batuhan",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            new Admin{ Id = 3,Username="Ziya",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            
+            new Admin{ Id = 1,FirstName="Emre",LastName="Oz",ContactInformation="0555",Username="Emre",Password="123",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+            new Admin{ Id = 2,FirstName="Batuhan",LastName="Ya",ContactInformation="0555",Username="Batuhan",Password="123",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+            new Admin{ Id = 3,FirstName="Ziya",LastName="XX",ContactInformation="0555",Username="Ziya",Password="123",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+
             };
 
             builder.HasData(data);

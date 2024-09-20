@@ -11,10 +11,8 @@ namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
             base.Configure(builder);
             var data = new Patient[]
             {
-            new Patient{ Id = 1,Username="Hastalık1",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            new Patient{ Id = 2,Username="Hastalık2",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            new Patient{ Id = 3,Username="Hastalık3",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-
+            new Patient{ Id = 1,FirstName="XX",LastName="XX",Gender="M",DateOfBirth=new DateTime(2023, 9, 20),Username="Hasta1",ContactInformation="0555",EmergencyContactFirstName="X"
+            ,EmergencyContactLastName="X",EmergencyContactPhone="0256",Password="123",CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
             };
 
             builder.HasData(data);
