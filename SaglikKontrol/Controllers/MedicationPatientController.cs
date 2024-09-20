@@ -3,14 +3,15 @@ using Business.Models.Request.Update;
 using Business.Models.Response;
 using Business.Services.Interface;
 using Infrastructure.Data.Postgres.Entities;
+using Microsoft.AspNetCore.Mvc;
 using Web.Controllers.Base;
 
 namespace Web.Controllers
 {
-    public class MedicationPatientController : BaseCRUDController<MedicationPatient, int, MedicationPatientCreateDTO, MedicationPatientUpdateDTO, MedicationPatientResponseDTO>
-    {
-        public MedicationPatientController(IMedicationPatientService service) : base(service)
-        {
-        }
-    }
+	public class MedicationPatientController : BaseCRUDController<MedicationPatient, int, MedicationPatientCreateDTO, MedicationPatientUpdateDTO, MedicationPatientResponseDTO>
+	{
+		public MedicationPatientController(IMedicationPatientService service) : base(service)
+		{
+		}
+	}
 }

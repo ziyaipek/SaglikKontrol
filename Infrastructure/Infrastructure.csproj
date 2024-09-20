@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -22,9 +22,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
-    <Folder Include="Configurations\" />
+    <Folder Include="Data\Postgres\Entities\" />
     <Folder Include="Data\Postgres\Migrations\" />
-    <Folder Include="Data\Postgres\Repositories\" />
     <Folder Include="Data\Postgres\Entities\Base\" />
     <Folder Include="Data\Postgres\Entities\Base\Interface\" />
     <Folder Include="Repositories\Base\" />
@@ -32,8 +31,8 @@
     <Folder Include="Repositories\Base\Interface\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
