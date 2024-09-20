@@ -166,6 +166,9 @@ builder.Services.AddControllers().AddJsonOptions(options =>
 );
 
 
+builder.Services.AddControllersWithViews();//Sonradan
+//builder.Services.AddMvc();//Sonradan
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -234,6 +237,20 @@ if (app.Environment.IsDevelopment())
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
+
+
+
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+	endpoints.MapControllers();
+
+	endpoints.MapControllerRoute(
+		name: "default",
+		pattern: "{controller=Home}/{action=Index}/{id?}");
+});
+
 
 app.UseCors("CorsPolicy");
 
