@@ -6,7 +6,6 @@ namespace Infrastructure.Data.Postgres.Entities
 {
     public class Disease : Entity<int>
     {
-        public int DiseaseID { get; set; }
         public string DiseaseName { get; set; } = default!;
         public string Description { get; set; } = default!;
         public string Symptoms { get; set; } = default!;

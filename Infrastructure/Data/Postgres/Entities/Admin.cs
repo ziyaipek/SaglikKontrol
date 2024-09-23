@@ -5,7 +5,6 @@ namespace Infrastructure.Data.Postgres.Entities
 {
     public class Admin : Entity<int>
     {
-        public int AdminID { get; set; }
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
         public string ContactInformation { get; set; } = default!;
