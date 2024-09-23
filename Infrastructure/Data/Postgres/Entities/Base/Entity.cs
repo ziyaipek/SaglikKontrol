@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Principal;
+using Core.Utilities;
 using Infrastructure.Data.Postgres.Entities.Base.Interface;
 
 namespace Infrastructure.Data.Postgres.Entities.Base;
@@ -13,7 +14,7 @@ public abstract class Entity<T> : IEntity
 
     protected Entity()
     {
-        CreatedAt = DateTime.UtcNow.ToLocalTime();
+        CreatedAt = DateTime.UtcNow.ToTimeZone();
         IsDeleted = false;
     }
 }

@@ -46,7 +46,7 @@ public class UnitOfWork : IUnitOfWork
 
         foreach (var updatedEntity in updatedEntities)
         {
-            updatedEntity.UpdatedAt = DateTime.UtcNow.ToLocalTime();
+            updatedEntity.UpdatedAt = DateTime.UtcNow.ToTimeZone();
         }
 
         var result = await _postgresContext.SaveChangesAsync();

@@ -11,9 +11,9 @@ namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
             base.Configure(builder);
             var data = new PatientDisease[]
             {
-            new PatientDisease{ Id = 1,CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            new PatientDisease{ Id = 2,CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
-            new PatientDisease{ Id = 3,CreatedAt = DateTime.UtcNow.ToLocalTime(),IsDeleted=false},
+            new PatientDisease{ Id = 1,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
+            new PatientDisease{ Id = 2,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
+            new PatientDisease{ Id = 3,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
 
             };
 
