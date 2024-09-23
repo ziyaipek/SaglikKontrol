@@ -12,11 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Infrastructure.Data.Postgres.Migrations
 {
     [DbContext(typeof(PostgresContext))]
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-    [Migration("20240923082929_Initial")]
-========
-    [Migration("20240923082355_Initial")]
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+    [Migration("20240923101547_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -79,11 +75,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                             Id = 1,
                             AdminID = 0,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(960),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(586),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(4273),
                             FirstName = "Emre",
                             IsDeleted = false,
                             LastName = "Oz",
@@ -95,11 +87,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                             Id = 2,
                             AdminID = 0,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(975),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(618),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(4286),
                             FirstName = "Batuhan",
                             IsDeleted = false,
                             LastName = "Ya",
@@ -111,11 +99,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                             Id = 3,
                             AdminID = 0,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(987),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(646),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(4295),
                             FirstName = "Ziya",
                             IsDeleted = false,
                             LastName = "XX",
@@ -164,11 +148,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(4404),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7037),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(9325),
                             Description = "Açıklama1",
                             DiseaseID = 0,
                             DiseaseName = "Hasta1",
@@ -178,11 +158,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 2,
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(4416),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7067),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(9335),
                             Description = "Açıklama2",
                             DiseaseID = 0,
                             DiseaseName = "Hasta2",
@@ -192,11 +168,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 3,
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(4426),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7096),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(9344),
                             Description = "Açıklama3",
                             DiseaseID = 0,
                             DiseaseName = "Hasta3",
@@ -257,11 +229,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(1770),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2114),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(6174),
                             DoctorID = 0,
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor1",
@@ -274,11 +242,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(1782),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2129),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(6195),
                             DoctorID = 0,
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor2",
@@ -291,11 +255,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(1793),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2142),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(6216),
                             DoctorID = 0,
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor3",
@@ -339,38 +299,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.HasIndex("PatientID");
 
                     b.ToTable("DoctorPatients");
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(3317),
-                            DoctorID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(3327),
-                            DoctorID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(3337),
-                            DoctorID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        });
-========
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
                 });
 
             modelBuilder.Entity("Infrastructure.Data.Postgres.Entities.Medication", b =>
@@ -414,11 +342,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ActiveIngredient = "3",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(6210),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(325),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 563, DateTimeKind.Utc).AddTicks(987),
                             IsDeleted = false,
                             MedicationID = 0,
                             MedicationName = "İlaç1",
@@ -428,11 +352,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ActiveIngredient = "3",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(6221),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(362),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 563, DateTimeKind.Utc).AddTicks(997),
                             IsDeleted = false,
                             MedicationID = 0,
                             MedicationName = "İlaç2",
@@ -442,11 +362,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ActiveIngredient = "3",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(6231),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(449),
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 563, DateTimeKind.Utc).AddTicks(1006),
                             IsDeleted = false,
                             MedicationID = 0,
                             MedicationName = "İlaç3",
@@ -487,38 +403,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.HasIndex("PatientID");
 
                     b.ToTable("MedicationPatients");
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(5590),
-                            ID = 0,
-                            IsDeleted = false,
-                            MedicationID = 0,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(5600),
-                            ID = 0,
-                            IsDeleted = false,
-                            MedicationID = 0,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(5610),
-                            ID = 0,
-                            IsDeleted = false,
-                            MedicationID = 0,
-                            PatientID = 0
-                        });
-========
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
                 });
 
             modelBuilder.Entity("Infrastructure.Data.Postgres.Entities.Patient", b =>
@@ -593,13 +477,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(3867),
-                            DateOfBirth = new DateTime(2023, 9, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-========
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(5852),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 15, 47, 562, DateTimeKind.Utc).AddTicks(8878),
                             DateOfBirth = "30.07.2001",
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
                             EmergencyContactFirstName = "X",
                             EmergencyContactLastName = "X",
                             EmergencyContactPhone = "0256",
@@ -647,38 +526,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.HasIndex("PatientID");
 
                     b.ToTable("PatientDiseases");
-<<<<<<<< HEAD:Infrastructure/Data/Postgres/Migrations/20240923082929_Initial.Designer.cs
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(7393),
-                            DiseaseID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(7404),
-                            DiseaseID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 29, 29, 316, DateTimeKind.Utc).AddTicks(7414),
-                            DiseaseID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        });
-========
->>>>>>>> origin/batuhan:Infrastructure/Data/Postgres/Migrations/20240923082355_Initial.Designer.cs
                 });
 
             modelBuilder.Entity("Infrastructure.Data.Postgres.Entities.DoctorPatient", b =>
