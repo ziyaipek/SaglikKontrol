@@ -72,7 +72,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                             Id = 1,
                             AdminID = 0,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(2819),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(586),
                             FirstName = "Emre",
                             IsDeleted = false,
                             LastName = "Oz",
@@ -84,7 +84,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                             Id = 2,
                             AdminID = 0,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(2825),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(618),
                             FirstName = "Batuhan",
                             IsDeleted = false,
                             LastName = "Ya",
@@ -96,7 +96,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                             Id = 3,
                             AdminID = 0,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(2828),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(646),
                             FirstName = "Ziya",
                             IsDeleted = false,
                             LastName = "XX",
@@ -145,7 +145,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(1409),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7037),
                             Description = "Açıklama1",
                             DiseaseID = 0,
                             DiseaseName = "Hasta1",
@@ -155,7 +155,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(1415),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7067),
                             Description = "Açıklama2",
                             DiseaseID = 0,
                             DiseaseName = "Hasta2",
@@ -165,7 +165,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(1422),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7096),
                             Description = "Açıklama3",
                             DiseaseID = 0,
                             DiseaseName = "Hasta3",
@@ -226,7 +226,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(5053),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2114),
                             DoctorID = 0,
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor1",
@@ -239,7 +239,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(5059),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2129),
                             DoctorID = 0,
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor2",
@@ -252,7 +252,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(5066),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2142),
                             DoctorID = 0,
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor3",
@@ -296,35 +296,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.HasIndex("PatientID");
 
                     b.ToTable("DoctorPatients");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(8822),
-                            DoctorID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(8829),
-                            DoctorID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(8833),
-                            DoctorID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        });
                 });
 
             modelBuilder.Entity("Infrastructure.Data.Postgres.Entities.Medication", b =>
@@ -368,7 +339,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(6823),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(325),
                             IsDeleted = false,
                             MedicationID = 0,
                             MedicationName = "İlaç1",
@@ -378,7 +349,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(6830),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(362),
                             IsDeleted = false,
                             MedicationID = 0,
                             MedicationName = "İlaç2",
@@ -388,7 +359,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(6836),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(449),
                             IsDeleted = false,
                             MedicationID = 0,
                             MedicationName = "İlaç3",
@@ -429,35 +400,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.HasIndex("PatientID");
 
                     b.ToTable("MedicationPatients");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(2554),
-                            ID = 0,
-                            IsDeleted = false,
-                            MedicationID = 0,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(2560),
-                            ID = 0,
-                            IsDeleted = false,
-                            MedicationID = 0,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(2563),
-                            ID = 0,
-                            IsDeleted = false,
-                            MedicationID = 0,
-                            PatientID = 0
-                        });
                 });
 
             modelBuilder.Entity("Infrastructure.Data.Postgres.Entities.Patient", b =>
@@ -475,8 +417,9 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("DateOfBirth")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("EmergencyContactFirstName")
                         .IsRequired()
@@ -531,8 +474,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(137),
-                            DateOfBirth = new DateTime(2023, 9, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(5852),
+                            DateOfBirth = "30.07.2001",
                             EmergencyContactFirstName = "X",
                             EmergencyContactLastName = "X",
                             EmergencyContactPhone = "0256",
@@ -580,35 +523,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.HasIndex("PatientID");
 
                     b.ToTable("PatientDiseases");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 13, DateTimeKind.Local).AddTicks(1497),
-                            DiseaseID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 13, DateTimeKind.Local).AddTicks(1500),
-                            DiseaseID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 20, 14, 22, 3, 13, DateTimeKind.Local).AddTicks(1503),
-                            DiseaseID = 0,
-                            ID = 0,
-                            IsDeleted = false,
-                            PatientID = 0
-                        });
                 });
 
             modelBuilder.Entity("Infrastructure.Data.Postgres.Entities.DoctorPatient", b =>

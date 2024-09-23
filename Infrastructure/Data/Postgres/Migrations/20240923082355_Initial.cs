@@ -104,7 +104,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                     PatientID = table.Column<int>(type: "integer", nullable: false),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    DateOfBirth = table.Column<string>(type: "text", nullable: false),
                     Gender = table.Column<string>(type: "text", nullable: false),
                     ContactInformation = table.Column<string>(type: "text", nullable: false),
                     Username = table.Column<string>(type: "text", nullable: false),
@@ -217,9 +217,9 @@ namespace Infrastructure.Data.Postgres.Migrations
                 columns: new[] { "Id", "AdminID", "ContactInformation", "CreatedAt", "FirstName", "IsDeleted", "LastName", "Password", "UpdatedAt", "Username" },
                 values: new object[,]
                 {
-                    { 1, 0, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(2819), "Emre", false, "Oz", "123", null, "Emre" },
-                    { 2, 0, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(2825), "Batuhan", false, "Ya", "123", null, "Batuhan" },
-                    { 3, 0, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(2828), "Ziya", false, "XX", "123", null, "Ziya" }
+                    { 1, 0, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(586), "Emre", false, "Oz", "123", null, "Emre" },
+                    { 2, 0, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(618), "Batuhan", false, "Ya", "123", null, "Batuhan" },
+                    { 3, 0, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(646), "Ziya", false, "XX", "123", null, "Ziya" }
                 });
 
             migrationBuilder.InsertData(
@@ -227,19 +227,9 @@ namespace Infrastructure.Data.Postgres.Migrations
                 columns: new[] { "Id", "CreatedAt", "Description", "DiseaseID", "DiseaseName", "IsDeleted", "Symptoms", "UpdatedAt" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(1409), "Açıklama1", 0, "Hasta1", false, "Semptomlar1", null },
-                    { 2, new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(1415), "Açıklama2", 0, "Hasta2", false, "Semptomlar2", null },
-                    { 3, new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(1422), "Açıklama3", 0, "Hasta3", false, "Semptomlar3", null }
-                });
-
-            migrationBuilder.InsertData(
-                table: "DoctorPatients",
-                columns: new[] { "Id", "CreatedAt", "DoctorID", "ID", "IsDeleted", "PatientID", "UpdatedAt" },
-                values: new object[,]
-                {
-                    { 1, new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(8822), 0, 0, false, 0, null },
-                    { 2, new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(8829), 0, 0, false, 0, null },
-                    { 3, new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(8833), 0, 0, false, 0, null }
+                    { 1, new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7037), "Açıklama1", 0, "Hasta1", false, "Semptomlar1", null },
+                    { 2, new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7067), "Açıklama2", 0, "Hasta2", false, "Semptomlar2", null },
+                    { 3, new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7096), "Açıklama3", 0, "Hasta3", false, "Semptomlar3", null }
                 });
 
             migrationBuilder.InsertData(
@@ -247,19 +237,9 @@ namespace Infrastructure.Data.Postgres.Migrations
                 columns: new[] { "Id", "ContactInformation", "CreatedAt", "DoctorID", "DoctorPassword", "DoctorUsername", "FirstName", "IsDeleted", "IsFirstLogin", "LastName", "UpdatedAt" },
                 values: new object[,]
                 {
-                    { 1, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(5053), 0, "123", "Doktor1", "A", false, false, "A", null },
-                    { 2, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(5059), 0, "123", "Doktor2", "B", false, false, "B", null },
-                    { 3, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 10, DateTimeKind.Local).AddTicks(5066), 0, "123", "Doktor3", "C", false, false, "C", null }
-                });
-
-            migrationBuilder.InsertData(
-                table: "MedicationPatients",
-                columns: new[] { "Id", "CreatedAt", "ID", "IsDeleted", "MedicationID", "PatientID", "UpdatedAt" },
-                values: new object[,]
-                {
-                    { 1, new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(2554), 0, false, 0, 0, null },
-                    { 2, new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(2560), 0, false, 0, 0, null },
-                    { 3, new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(2563), 0, false, 0, 0, null }
+                    { 1, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2114), 0, "123", "Doktor1", "A", false, false, "A", null },
+                    { 2, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2129), 0, "123", "Doktor2", "B", false, false, "B", null },
+                    { 3, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2142), 0, "123", "Doktor3", "C", false, false, "C", null }
                 });
 
             migrationBuilder.InsertData(
@@ -267,25 +247,15 @@ namespace Infrastructure.Data.Postgres.Migrations
                 columns: new[] { "Id", "ActiveIngredient", "CreatedAt", "IsDeleted", "MedicationID", "MedicationName", "UpdatedAt", "UsageInstructions" },
                 values: new object[,]
                 {
-                    { 1, "3", new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(6823), false, 0, "İlaç1", null, "2" },
-                    { 2, "3", new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(6830), false, 0, "İlaç2", null, "2" },
-                    { 3, "3", new DateTime(2024, 9, 20, 14, 22, 3, 12, DateTimeKind.Local).AddTicks(6836), false, 0, "İlaç3", null, "2" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "PatientDiseases",
-                columns: new[] { "Id", "CreatedAt", "DiseaseID", "ID", "IsDeleted", "PatientID", "UpdatedAt" },
-                values: new object[,]
-                {
-                    { 1, new DateTime(2024, 9, 20, 14, 22, 3, 13, DateTimeKind.Local).AddTicks(1497), 0, 0, false, 0, null },
-                    { 2, new DateTime(2024, 9, 20, 14, 22, 3, 13, DateTimeKind.Local).AddTicks(1500), 0, 0, false, 0, null },
-                    { 3, new DateTime(2024, 9, 20, 14, 22, 3, 13, DateTimeKind.Local).AddTicks(1503), 0, 0, false, 0, null }
+                    { 1, "3", new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(325), false, 0, "İlaç1", null, "2" },
+                    { 2, "3", new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(362), false, 0, "İlaç2", null, "2" },
+                    { 3, "3", new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(449), false, 0, "İlaç3", null, "2" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Patients",
                 columns: new[] { "Id", "ContactInformation", "CreatedAt", "DateOfBirth", "EmergencyContactFirstName", "EmergencyContactLastName", "EmergencyContactPhone", "FirstName", "Gender", "IsDeleted", "IsFirstLogin", "LastName", "Password", "PatientID", "UpdatedAt", "Username" },
-                values: new object[] { 1, "0555", new DateTime(2024, 9, 20, 14, 22, 3, 11, DateTimeKind.Local).AddTicks(137), new DateTime(2023, 9, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "X", "X", "0256", "XX", "M", false, false, "XX", "123", 0, null, "Hasta1" });
+                values: new object[] { 1, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(5852), "30.07.2001", "X", "X", "0256", "XX", "M", false, false, "XX", "123", 0, null, "Hasta1" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_DoctorPatients_DoctorID",

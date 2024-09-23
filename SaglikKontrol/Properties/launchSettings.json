@@ -8,6 +8,16 @@
     }
   },
   "profiles": {
+    "Web-DEV": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5258/",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
     "SaglikKontrol": {
       "commandName": "Project",
       "launchBrowser": true,
