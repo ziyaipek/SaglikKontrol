@@ -12,9 +12,6 @@ namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
             base.Configure(builder);
             var data = new DoctorPatient[]
             {
-            new DoctorPatient{ Id = 1,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
-            new DoctorPatient{ Id = 2,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
-            new DoctorPatient{ Id = 3,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
 
             };
 

@@ -6,7 +6,7 @@ namespace Business.Models.Request.Create
 	{
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
-        public DateTime DateOfBirth { get; set; }
+        public string DateOfBirth { get; set; }
         public string Gender { get; set; } = default!;
         public string ContactInformation { get; set; } = default!;
         public string Username { get; set; } = default!;

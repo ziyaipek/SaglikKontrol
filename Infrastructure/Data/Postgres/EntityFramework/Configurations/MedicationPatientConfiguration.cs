@@ -12,9 +12,9 @@ namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
             base.Configure(builder);
             var data = new MedicationPatient[]
             {
-            new MedicationPatient{ Id = 1,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
-            new MedicationPatient{ Id = 2,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
-            new MedicationPatient{ Id = 3,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
+            //new MedicationPatient{ Id = 1,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
+            //new MedicationPatient{ Id = 2,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
+            //new MedicationPatient{ Id = 3,CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
 
             };
 

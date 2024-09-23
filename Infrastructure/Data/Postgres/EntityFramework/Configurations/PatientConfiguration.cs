@@ -12,7 +12,7 @@ namespace Infrastructure.Data.Postgres.EntityFramework.Configurations
             base.Configure(builder);
             var data = new Patient[]
             {
-            new Patient{ Id = 1,FirstName="XX",LastName="XX",Gender="M",DateOfBirth=new DateTime(2023, 9, 20),Username="Hasta1",ContactInformation="0555",EmergencyContactFirstName="X"
+            new Patient{ Id = 1,FirstName="XX",LastName="XX",Gender="M",DateOfBirth="30.07.2001",Username="Hasta1",ContactInformation="0555",EmergencyContactFirstName="X"
             ,EmergencyContactLastName="X",EmergencyContactPhone="0256",Password="123",CreatedAt = DateTime.UtcNow.ToTimeZone(),IsDeleted=false},
             };
 
