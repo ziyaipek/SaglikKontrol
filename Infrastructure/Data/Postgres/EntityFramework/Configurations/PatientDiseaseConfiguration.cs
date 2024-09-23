@@ -1,4 +1,5 @@
-﻿using Infrastructure.Data.Postgres.Entities;
+﻿using Core.Utilities;
+using Infrastructure.Data.Postgres.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.Data;
 
