@@ -15,7 +15,8 @@ namespace Infrastructure.Data.Postgres
         IPatientDiseaseRepository PatientDiseases { get; }
         IPatientRepository Patients { get; }
 
-        Task<int> CommitAsync();
+        Task<int> CommitAsync(); // Hastaya doktor atandığında hem hasta hem de
+                                 // doktor veritabanında aynı anda değişiklik yapmayı asağlar
     }
 }
 

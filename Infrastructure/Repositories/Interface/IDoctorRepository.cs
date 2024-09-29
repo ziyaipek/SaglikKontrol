@@ -6,5 +6,6 @@ namespace Infrastructure.Data.Postgres.Repositories.Interface
 {
     public interface IDoctorRepository : IRepository<Doctor, int>
     {
+        Doctor GetByUsername(string username);
     }
 }

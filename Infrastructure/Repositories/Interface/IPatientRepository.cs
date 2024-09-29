@@ -5,6 +5,7 @@ namespace Infrastructure.Data.Postgres.Repositories.Interface
 {
     public interface IPatientRepository : IRepository<Patient, int>
     {
+        Patient GetByUsername(string username);
     }
 }
 

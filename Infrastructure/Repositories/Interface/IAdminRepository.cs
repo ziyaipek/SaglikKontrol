@@ -6,5 +6,6 @@ namespace Infrastructure.Data.Postgres.Repositories.Interface
 {
     public interface IAdminRepository : IRepository<Admin, int>
     {
+        Admin GetByUsername(string username);
     }
 }

@@ -5,7 +5,7 @@ namespace Infrastructure.Data.Postgres.Entities
 {
     public class Doctor : Entity<int>
     {
-        public int DoctorID { get; set; }
+        //public int DoctorID { get; set; }
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
         public string ContactInformation { get; set; } = default!;

@@ -20,7 +20,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    AdminID = table.Column<int>(type: "integer", nullable: false),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
                     ContactInformation = table.Column<string>(type: "text", nullable: false),
@@ -41,7 +40,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    DiseaseID = table.Column<int>(type: "integer", nullable: false),
                     DiseaseName = table.Column<string>(type: "text", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: false),
                     Symptoms = table.Column<string>(type: "text", nullable: false),
@@ -60,7 +58,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    DoctorID = table.Column<int>(type: "integer", nullable: false),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
                     ContactInformation = table.Column<string>(type: "text", nullable: false),
@@ -82,7 +79,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    MedicationID = table.Column<int>(type: "integer", nullable: false),
                     MedicationName = table.Column<string>(type: "text", nullable: false),
                     ActiveIngredient = table.Column<string>(type: "text", nullable: false),
                     UsageInstructions = table.Column<string>(type: "text", nullable: false),
@@ -101,7 +97,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    PatientID = table.Column<int>(type: "integer", nullable: false),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
                     DateOfBirth = table.Column<string>(type: "text", nullable: false),
@@ -128,7 +123,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ID = table.Column<int>(type: "integer", nullable: false),
                     PatientID = table.Column<int>(type: "integer", nullable: false),
                     DoctorID = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -158,7 +152,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ID = table.Column<int>(type: "integer", nullable: false),
                     MedicationID = table.Column<int>(type: "integer", nullable: false),
                     PatientID = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -188,7 +181,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ID = table.Column<int>(type: "integer", nullable: false),
                     PatientID = table.Column<int>(type: "integer", nullable: false),
                     DiseaseID = table.Column<int>(type: "integer", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -214,48 +206,48 @@ namespace Infrastructure.Data.Postgres.Migrations
 
             migrationBuilder.InsertData(
                 table: "Admins",
-                columns: new[] { "Id", "AdminID", "ContactInformation", "CreatedAt", "FirstName", "IsDeleted", "LastName", "Password", "UpdatedAt", "Username" },
+                columns: new[] { "Id", "ContactInformation", "CreatedAt", "FirstName", "IsDeleted", "LastName", "Password", "UpdatedAt", "Username" },
                 values: new object[,]
                 {
-                    { 1, 0, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(586), "Emre", false, "Oz", "123", null, "Emre" },
-                    { 2, 0, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(618), "Batuhan", false, "Ya", "123", null, "Batuhan" },
-                    { 3, 0, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(646), "Ziya", false, "XX", "123", null, "Ziya" }
+                    { 1, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1916), "Emre", false, "Oz", "123", null, "Emre" },
+                    { 2, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1925), "Batuhan", false, "Ya", "123", null, "Batuhan" },
+                    { 3, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1930), "Ziya", false, "XX", "123", null, "Ziya" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Diseases",
-                columns: new[] { "Id", "CreatedAt", "Description", "DiseaseID", "DiseaseName", "IsDeleted", "Symptoms", "UpdatedAt" },
+                columns: new[] { "Id", "CreatedAt", "Description", "DiseaseName", "IsDeleted", "Symptoms", "UpdatedAt" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7037), "Açıklama1", 0, "Hasta1", false, "Semptomlar1", null },
-                    { 2, new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7067), "Açıklama2", 0, "Hasta2", false, "Semptomlar2", null },
-                    { 3, new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7096), "Açıklama3", 0, "Hasta3", false, "Semptomlar3", null }
+                    { 1, new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3596), "Açıklama1", "Hasta1", false, "Semptomlar1", null },
+                    { 2, new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3603), "Açıklama2", "Hasta2", false, "Semptomlar2", null },
+                    { 3, new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3610), "Açıklama3", "Hasta3", false, "Semptomlar3", null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Doctors",
-                columns: new[] { "Id", "ContactInformation", "CreatedAt", "DoctorID", "DoctorPassword", "DoctorUsername", "FirstName", "IsDeleted", "IsFirstLogin", "LastName", "UpdatedAt" },
+                columns: new[] { "Id", "ContactInformation", "CreatedAt", "DoctorPassword", "DoctorUsername", "FirstName", "IsDeleted", "IsFirstLogin", "LastName", "UpdatedAt" },
                 values: new object[,]
                 {
-                    { 1, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2114), 0, "123", "Doktor1", "A", false, false, "A", null },
-                    { 2, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2129), 0, "123", "Doktor2", "B", false, false, "B", null },
-                    { 3, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2142), 0, "123", "Doktor3", "C", false, false, "C", null }
+                    { 1, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2494), "123", "Doktor1", "A", false, false, "A", null },
+                    { 2, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2503), "123", "Doktor2", "B", false, false, "B", null },
+                    { 3, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2510), "123", "Doktor3", "C", false, false, "C", null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Medications",
-                columns: new[] { "Id", "ActiveIngredient", "CreatedAt", "IsDeleted", "MedicationID", "MedicationName", "UpdatedAt", "UsageInstructions" },
+                columns: new[] { "Id", "ActiveIngredient", "CreatedAt", "IsDeleted", "MedicationName", "UpdatedAt", "UsageInstructions" },
                 values: new object[,]
                 {
-                    { 1, "3", new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(325), false, 0, "İlaç1", null, "2" },
-                    { 2, "3", new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(362), false, 0, "İlaç2", null, "2" },
-                    { 3, "3", new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(449), false, 0, "İlaç3", null, "2" }
+                    { 1, "3", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4257), false, "İlaç1", null, "2" },
+                    { 2, "3", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4264), false, "İlaç2", null, "2" },
+                    { 3, "3", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4271), false, "İlaç3", null, "2" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Patients",
-                columns: new[] { "Id", "ContactInformation", "CreatedAt", "DateOfBirth", "EmergencyContactFirstName", "EmergencyContactLastName", "EmergencyContactPhone", "FirstName", "Gender", "IsDeleted", "IsFirstLogin", "LastName", "Password", "PatientID", "UpdatedAt", "Username" },
-                values: new object[] { 1, "0555", new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(5852), "30.07.2001", "X", "X", "0256", "XX", "M", false, false, "XX", "123", 0, null, "Hasta1" });
+                columns: new[] { "Id", "ContactInformation", "CreatedAt", "DateOfBirth", "EmergencyContactFirstName", "EmergencyContactLastName", "EmergencyContactPhone", "FirstName", "Gender", "IsDeleted", "IsFirstLogin", "LastName", "Password", "UpdatedAt", "Username" },
+                values: new object[] { 1, "0555", new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3186), "30.07.2001", "X", "X", "0256", "XX", "M", false, false, "XX", "123", null, "Hasta1" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_DoctorPatients_DoctorID",

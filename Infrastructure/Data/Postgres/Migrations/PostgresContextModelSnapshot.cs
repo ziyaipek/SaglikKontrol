@@ -30,9 +30,6 @@ namespace Infrastructure.Data.Postgres.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AdminID")
-                        .HasColumnType("integer");
-
                     b.Property<string>("ContactInformation")
                         .IsRequired()
                         .HasColumnType("text");
@@ -70,9 +67,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 1,
-                            AdminID = 0,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(586),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1916),
                             FirstName = "Emre",
                             IsDeleted = false,
                             LastName = "Oz",
@@ -82,9 +78,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 2,
-                            AdminID = 0,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(618),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1925),
                             FirstName = "Batuhan",
                             IsDeleted = false,
                             LastName = "Ya",
@@ -94,9 +89,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 3,
-                            AdminID = 0,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(646),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1930),
                             FirstName = "Ziya",
                             IsDeleted = false,
                             LastName = "XX",
@@ -120,9 +114,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("DiseaseID")
-                        .HasColumnType("integer");
-
                     b.Property<string>("DiseaseName")
                         .IsRequired()
                         .HasColumnType("text");
@@ -145,9 +136,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7037),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3596),
                             Description = "Açıklama1",
-                            DiseaseID = 0,
                             DiseaseName = "Hasta1",
                             IsDeleted = false,
                             Symptoms = "Semptomlar1"
@@ -155,9 +145,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7067),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3603),
                             Description = "Açıklama2",
-                            DiseaseID = 0,
                             DiseaseName = "Hasta2",
                             IsDeleted = false,
                             Symptoms = "Semptomlar2"
@@ -165,9 +154,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(7096),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3610),
                             Description = "Açıklama3",
-                            DiseaseID = 0,
                             DiseaseName = "Hasta3",
                             IsDeleted = false,
                             Symptoms = "Semptomlar3"
@@ -188,9 +176,6 @@ namespace Infrastructure.Data.Postgres.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("DoctorID")
-                        .HasColumnType("integer");
 
                     b.Property<string>("DoctorPassword")
                         .IsRequired()
@@ -226,8 +211,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2114),
-                            DoctorID = 0,
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2494),
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor1",
                             FirstName = "A",
@@ -239,8 +223,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2129),
-                            DoctorID = 0,
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2503),
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor2",
                             FirstName = "B",
@@ -252,8 +235,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(2142),
-                            DoctorID = 0,
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2510),
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor3",
                             FirstName = "C",
@@ -275,9 +257,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("DoctorID")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("ID")
                         .HasColumnType("integer");
 
                     b.Property<bool>("IsDeleted")
@@ -316,9 +295,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
-                    b.Property<int>("MedicationID")
-                        .HasColumnType("integer");
-
                     b.Property<string>("MedicationName")
                         .IsRequired()
                         .HasColumnType("text");
@@ -339,9 +315,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(325),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4257),
                             IsDeleted = false,
-                            MedicationID = 0,
                             MedicationName = "İlaç1",
                             UsageInstructions = "2"
                         },
@@ -349,9 +324,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(362),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4264),
                             IsDeleted = false,
-                            MedicationID = 0,
                             MedicationName = "İlaç2",
                             UsageInstructions = "2"
                         },
@@ -359,9 +333,8 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 552, DateTimeKind.Utc).AddTicks(449),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4271),
                             IsDeleted = false,
-                            MedicationID = 0,
                             MedicationName = "İlaç3",
                             UsageInstructions = "2"
                         });
@@ -377,9 +350,6 @@ namespace Infrastructure.Data.Postgres.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("ID")
-                        .HasColumnType("integer");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
@@ -455,9 +425,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("PatientID")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -474,7 +441,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 11, 23, 55, 551, DateTimeKind.Utc).AddTicks(5852),
+                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3186),
                             DateOfBirth = "30.07.2001",
                             EmergencyContactFirstName = "X",
                             EmergencyContactLastName = "X",
@@ -485,7 +452,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                             IsFirstLogin = false,
                             LastName = "XX",
                             Password = "123",
-                            PatientID = 0,
                             Username = "Hasta1"
                         });
                 });
@@ -502,9 +468,6 @@ namespace Infrastructure.Data.Postgres.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("DiseaseID")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("ID")
                         .HasColumnType("integer");
 
                     b.Property<bool>("IsDeleted")

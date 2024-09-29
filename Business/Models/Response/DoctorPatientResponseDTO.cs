@@ -4,6 +4,7 @@ namespace Business.Models.Response
 {
 	public class DoctorPatientResponseDTO
 	{
+        public int Id { get; set; } = default!;
         public int PatientID { get; set; }
         public Patient Patient { get; set; } = default!;
         public int DoctorID { get; set; }

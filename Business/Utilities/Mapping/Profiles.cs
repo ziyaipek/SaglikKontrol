@@ -1,4 +1,5 @@
-﻿using Business.Models.Request.Create;
+﻿using AutoMapper;
+using Business.Models.Request.Create;
 using Business.Models.Request.Functional;
 using Business.Models.Request.Update;
 using Business.Models.Response;
@@ -9,42 +10,45 @@ using System.Security;
 using System.Text.RegularExpressions;
 using File = Infrastructure.Data.Postgres.Entities.File;
 
-namespace Business.Utilities.Mapping;
-
-public class Profiles : AutoMapper.Profile
+namespace Business.Utilities.Mapping
 {
-    public Profiles()
+    public class Profiles : Profile
     {
-        CreateMap<AdminCreateDTO, Admin>();
-        CreateMap<DiseaseCreateDTO, Disease>();
-        CreateMap<DoctorCreateDTO, Doctor>();
-        CreateMap<DoctorPatientCreateDTO, DoctorPatient>();
-        CreateMap<MedicationCreateDTO, Medication>();
-        CreateMap<MedicationPatientCreateDTO, MedicationPatient>();
-        CreateMap<PatientCreateDTO, Patient>();
-        CreateMap<PatientDiseaseCreateDTO, PatientDisease>();
+        public Profiles()
+        {
+            // CreateMap for Admin Entity and DTOs
+            CreateMap<Admin, AdminResponseDTO>(); // Admin -> AdminResponseDTO mapping
+            CreateMap<AdminCreateDTO, Admin>();   // AdminCreateDTO -> Admin mapping
+            CreateMap<AdminUpdateDTO, Admin>();   // AdminUpdateDTO -> Admin mapping
 
-        CreateMap<AdminUpdateDTO, Admin>();
-        CreateMap<DiseaseUpdateDTO, Disease>();
-        CreateMap<DoctorUpdateDTO, Doctor>();
-        CreateMap<DoctorPatientUpdateDTO, DoctorPatient>();
-        CreateMap<MedicationUpdateDTO, Medication>();
-        CreateMap<MedicationPatientUpdateDTO, MedicationPatient>();
-        CreateMap<PatientUpdateDTO, Patient>();
-        CreateMap<PatientDiseaseUpdateDTO, PatientDisease>();
+            // CreateMap for other entities and their respective DTOs
+            CreateMap<Disease, DiseaseResponseDTO>();
+            CreateMap<DiseaseCreateDTO, Disease>();
+            CreateMap<DiseaseUpdateDTO, Disease>();
 
-        CreateMap<AdminResponseDTO, Admin>();
-        CreateMap<DiseaseResponseDTO, Disease>();
-        CreateMap<DoctorResponseDTO, Doctor>();
-        CreateMap<DoctorPatientResponseDTO, DoctorPatient>();
-        CreateMap<MedicationResponseDTO, Medication>();
-        CreateMap<MedicationPatientResponseDTO, MedicationPatient>();
-        CreateMap<PatientResponseDTO, Patient>();
-        CreateMap<PatientDiseaseResponseDTO, PatientDisease>();
+            CreateMap<Doctor, DoctorResponseDTO>();
+            CreateMap<DoctorCreateDTO, Doctor>();
+            CreateMap<DoctorUpdateDTO, Doctor>();
+
+            CreateMap<DoctorPatient, DoctorPatientResponseDTO>();
+            CreateMap<DoctorPatientCreateDTO, DoctorPatient>();
+            CreateMap<DoctorPatientUpdateDTO, DoctorPatient>();
+
+            CreateMap<Medication, MedicationResponseDTO>();
+            CreateMap<MedicationCreateDTO, Medication>();
+            CreateMap<MedicationUpdateDTO, Medication>();
+
+            CreateMap<MedicationPatient, MedicationPatientResponseDTO>();
+            CreateMap<MedicationPatientCreateDTO, MedicationPatient>();
+            CreateMap<MedicationPatientUpdateDTO, MedicationPatient>();
+
+            CreateMap<Patient, PatientResponseDTO>();
+            CreateMap<PatientCreateDTO, Patient>();
+            CreateMap<PatientUpdateDTO, Patient>();
+
+            CreateMap<PatientDisease, PatientDiseaseResponseDTO>();
+            CreateMap<PatientDiseaseCreateDTO, PatientDisease>();
+            CreateMap<PatientDiseaseUpdateDTO, PatientDisease>();
+        }
     }
-
-    //private void CreateMap<T1, T2>()
-    //{
-    //    throw new NotImplementedException();
-    //}
 }

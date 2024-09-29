@@ -6,7 +6,7 @@ namespace Infrastructure.Data.Postgres.Entities
 {
     public class Patient : Entity<int>
     {
-        public int PatientID { get; set; }
+        //public int PatientID { get; set; }
         public string FirstName { get; set; } 
         public string LastName { get; set; } 
         public string DateOfBirth { get; set; }
