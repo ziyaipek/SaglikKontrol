@@ -3,6 +3,8 @@ namespace Business.Models.Request.Create
 {
 	public class AdminCreateDTO
 	{
+
+
         public string FirstName { get; set; } = default!;
         public string LastName { get; set; } = default!;
         public string ContactInformation { get; set; } = default!;
