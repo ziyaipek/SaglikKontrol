@@ -13,7 +13,7 @@ namespace Business.Models.Response
         public bool IsDeleted { get; set; } = false;
         public bool IsFirstLogin { get; set; } = true;
 
-        public List<DoctorPatient> DoctorPatients { get; set; } = default!;
+        //public List<DoctorPatient> DoctorPatients { get; set; } = default!;
     }
 }
 

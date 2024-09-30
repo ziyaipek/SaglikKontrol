@@ -8,7 +8,7 @@ namespace Business.Models.Response
         public string DiseaseName { get; set; } = default!;
         public string Description { get; set; } = default!;
         public string Symptoms { get; set; } = default!;
-        public List<PatientDisease> PatientDiseases { get; set; } = default!;
+        //public List<PatientDisease> PatientDiseases { get; set; } = default!;
     }
 }
 

@@ -18,8 +18,8 @@ namespace Business.Models.Response
         public bool IsDeleted { get; set; } = false;
         public bool IsFirstLogin { get; set; } = true;
 
-        public List<PatientDisease> PatientDiseases { get; set; } = default!;
-        public List<MedicationPatient> MedicationPatients { get; set; } = default!;
+        //public List<PatientDisease> PatientDiseases { get; set; } = default!;
+        //public List<MedicationPatient> MedicationPatients { get; set; } = default!;
     }
 }
 
