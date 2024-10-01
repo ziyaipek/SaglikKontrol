@@ -68,7 +68,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1916),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(7303),
                             FirstName = "Emre",
                             IsDeleted = false,
                             LastName = "Oz",
@@ -79,7 +79,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1925),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(7322),
                             FirstName = "Batuhan",
                             IsDeleted = false,
                             LastName = "Ya",
@@ -90,7 +90,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(1930),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(7336),
                             FirstName = "Ziya",
                             IsDeleted = false,
                             LastName = "XX",
@@ -136,7 +136,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3596),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 644, DateTimeKind.Utc).AddTicks(253),
                             Description = "Açıklama1",
                             DiseaseName = "Hasta1",
                             IsDeleted = false,
@@ -145,7 +145,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3603),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 644, DateTimeKind.Utc).AddTicks(267),
                             Description = "Açıklama2",
                             DiseaseName = "Hasta2",
                             IsDeleted = false,
@@ -154,7 +154,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3610),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 644, DateTimeKind.Utc).AddTicks(280),
                             Description = "Açıklama3",
                             DiseaseName = "Hasta3",
                             IsDeleted = false,
@@ -211,7 +211,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2494),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(8315),
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor1",
                             FirstName = "A",
@@ -223,7 +223,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2503),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(8330),
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor2",
                             FirstName = "B",
@@ -235,7 +235,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(2510),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(8345),
                             DoctorPassword = "123",
                             DoctorUsername = "Doktor3",
                             FirstName = "C",
@@ -315,7 +315,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4257),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 644, DateTimeKind.Utc).AddTicks(1577),
                             IsDeleted = false,
                             MedicationName = "İlaç1",
                             UsageInstructions = "2"
@@ -324,7 +324,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 2,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4264),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 644, DateTimeKind.Utc).AddTicks(1591),
                             IsDeleted = false,
                             MedicationName = "İlaç2",
                             UsageInstructions = "2"
@@ -333,7 +333,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 3,
                             ActiveIngredient = "3",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(4271),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 644, DateTimeKind.Utc).AddTicks(1605),
                             IsDeleted = false,
                             MedicationName = "İlaç3",
                             UsageInstructions = "2"
@@ -441,7 +441,7 @@ namespace Infrastructure.Data.Postgres.Migrations
                         {
                             Id = 1,
                             ContactInformation = "0555",
-                            CreatedAt = new DateTime(2024, 9, 23, 13, 59, 1, 732, DateTimeKind.Utc).AddTicks(3186),
+                            CreatedAt = new DateTime(2024, 10, 1, 12, 1, 49, 643, DateTimeKind.Utc).AddTicks(9627),
                             DateOfBirth = "30.07.2001",
                             EmergencyContactFirstName = "X",
                             EmergencyContactLastName = "X",
